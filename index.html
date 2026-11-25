@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Attendance System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="login" class="login-page">
+        <div class="card login-card">
+            <h1>Church Attendance System</h1>
+            <p class="muted">Sign in to manage members and attendance.</p>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" autocomplete="current-password">
+
+            <button class="button" id="loginButton">Sign in</button>
+            <p id="loginError" class="error"></p>
+
+            <p class="muted small">Demo login: admin / admin123</p>
+        </div>
+    </section>
+
+    <section id="app" class="hidden">
+        <header>
+            <strong>Church Attendance</strong>
+            <nav id="navigation"></nav>
+            <button class="button secondary" id="logoutButton">Sign out</button>
+        </header>
+
+        <main id="pageContent"></main>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
